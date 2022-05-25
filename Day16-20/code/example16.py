@@ -8,7 +8,7 @@
 """
 
 
-class Student():
+class Student:
     __slots__ = ('stuid', 'name', 'gender')
 
     def __init__(self, stuid, name):
@@ -20,7 +20,7 @@ class Student():
 
     def __eq__(self, other):
         return self.stuid == other.stuid and \
-            self.name == other.name
+               self.name == other.name
 
     def __str__(self):
         return f'{self.stuid}: {self.name}'
@@ -63,4 +63,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

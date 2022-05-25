@@ -7,7 +7,7 @@
 """
 
 
-class StreamHasher():
+class StreamHasher:
     """摘要生成器"""
 
     def __init__(self, algorithm='md5', size=4096):
@@ -19,7 +19,6 @@ class StreamHasher():
         self.size = size
         cls = getattr(__import__('hashlib'), algorithm.lower())
         self.hasher = cls()
-    
 
     def digest(self, file_stream):
         """生成十六进制的摘要字符串"""

@@ -16,9 +16,9 @@ O(3 ** n)：几何级数时间复杂度
 O(n!)：阶乘时间复杂度 - 旅行经销商问题 - NP
 """
 from math import log2, factorial
-from matplotlib import pyplot
 
 import numpy
+from matplotlib import pyplot
 
 
 def seq_search(items: list, elem) -> int:

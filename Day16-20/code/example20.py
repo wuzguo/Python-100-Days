@@ -17,8 +17,8 @@ def output(content):
 
 
 def main():
-    Thread(target=output, args=('Ping', ), daemon=True).start()
-    Thread(target=output, args=('Pong', ), daemon=True).start()
+    Thread(target=output, args=('Ping',), daemon=True).start()
+    Thread(target=output, args=('Pong',), daemon=True).start()
     sleep(5)
     print('bye!')
 

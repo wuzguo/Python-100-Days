@@ -14,6 +14,7 @@ pytest -v --cov
 pip install nose2 cov-core
 nose2 -v -C
 """
+
 from unittest import TestCase
 
 from example01 import seq_search, bin_search

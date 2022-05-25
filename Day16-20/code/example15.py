@@ -2,7 +2,6 @@
 迭代器 - __iter__ / __next__
 itertools - 生成可迭代序列的工具模块
 """
-import itertools
 
 from math import sqrt
 
@@ -37,12 +36,12 @@ class PrimeIter(object):
 
 class FibIter(object):
     """斐波那契数迭代器"""
-    
+
     def __init__(self, num):
         self.num = num
         self.a, self.b = 0, 1
         self.idx = 0
-   
+
     def __iter__(self):
         return self
 

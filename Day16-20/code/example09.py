@@ -11,9 +11,7 @@ import pymysql
 
 
 def record(output):
-
     def decorate(func):
-
         @wraps(func)
         def wrapper(*args, **kwargs):
             start = time()

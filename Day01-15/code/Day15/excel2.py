@@ -7,7 +7,6 @@ Date: 2018-03-26
 """
 
 from openpyxl import load_workbook
-from openpyxl import Workbook
 
 workbook = load_workbook('./res/学生明细表.xlsx')
 print(workbook.sheetnames)

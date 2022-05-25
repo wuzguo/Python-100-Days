@@ -16,9 +16,7 @@
 import glob
 import os
 import time
-
 from concurrent.futures import ThreadPoolExecutor
-from threading import Thread
 
 from PIL import Image
 
@@ -85,10 +83,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-

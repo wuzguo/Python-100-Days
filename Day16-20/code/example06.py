@@ -16,9 +16,8 @@ dumps / loads
 """
 import base64
 import json
-import redis
 
-from example02 import Person
+import redis
 
 
 class PersonJsonEncoder(json.JSONEncoder):
@@ -28,7 +27,7 @@ class PersonJsonEncoder(json.JSONEncoder):
 
 
 def main():
-    cli = redis.StrictRedis(host='120.77.222.217', port=6379, 
+    cli = redis.StrictRedis(host='120.77.222.217', port=6379,
                             password='123123')
     data = base64.b64decode(cli.get('guido'))
     with open('guido2.jpg', 'wb') as file_stream:
@@ -47,4 +46,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
